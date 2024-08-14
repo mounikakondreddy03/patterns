@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>forms in html</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Register here &#128071;</legend>
+            <h2>Hi..&#128400;I am to join in training Program.. and wanna to learn course &#128214; and become developer&#128187;</h2>
+            <form action="./doc.txt">
+                <pre>
+                    <div style="background-color: yellow;">
+                        <label for="fullName">Enter Fullname:--</label>
+                        <input type="text" placeholder="Enter name here" id="fullName" pattern="[A-Za-s]{4,}" required>
+                    </div>
+                    <div  style="background-color: blueviolet;">
+                        <label for="pswd">Enter Password:--</label>
+                        <input type="password" placeholder="Enter password here" id="pswd" pattern="[a-e0-5A-R@>/]{5,}" required>
+                    </div>
+                    <div style="background-color:beige;">
+                        <label for="email">Enter Email:--</label>
+                        <input type="email" placeholder="Enter email here" id="email" pattern="[a-z0-9._]+@[a-z]+\.[a-z]{2,}" required>
+                    </div>
+            <div style="background-color:aqua;">
+                <label for="cities">Location:--</label>
+                <select name="Location" id="cities" width="170px;">
+                    <option value="">Select location</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+            </div>
+                    <div style="background-color:cadetblue;">
+                        <label for="timings">Enter timings:--</label>
+                        <input type="text" list="timings">
+                        <datalist id="timings">
+                            <option value="6:00 AM - 7:00 PM" selected>6:00 AM - 7:00 PM</option>
+                            <option value="8:00 AM - 5:00 PM">8:00 AM - 5:00 PM</option>
+                            <option value="2:00 PM - 11:00 PM">2:00 PM - 11:00 PM</option>
+                            <option value="6:00 PM - 2:00 AM">6:00 PM - 2:00 AM</option>
+                        </datalist> 
+                    </div>
+
+                    <input type="file">
+
+                <div style="background-color:gray;">
+                    Male:--<input type="radio"id="male"name="gender"value="male"required>
+                    Female:--<input type="radio"id="famale"name="gender"value="female"required>
+                    Others:--<input type="radio"id="others"name="gender"value="others"required>
+                </div>
+                    <input type="checkbox">I agree to <a href="">terms</a> and <a href="">conditions</a>
+    <div style="background-color:yellowgreen;">
+        <textarea read only style="width: 450px; height: 75px;">
+            Mounika
+            448 padma nilayam
+            lingampalli
+            Telangana
+         </textarea>
+    </div>
+                    <button type="Submit">Submit</button>
+                </pre>
+            </form>
+        </fieldset>
+    </body>
+</html>
